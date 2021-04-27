@@ -1,0 +1,197 @@
+body{
+  font-family: Arial, Helvetica,sans-serif,Roboto;
+  margin:0em;
+}
+h1,h2,h3,h4,h5{
+  font-family: 'Fjalla One', sans-serif;
+}
+.body{
+  padding: 60px 15px;
+  }
+.imagenfondo{
+  background-image: url(..//imagenes/portada.jpg);
+  background-size: cover;
+  height: 250px;
+  background-position: center;
+  background-color: rgba(255, 0, 0, 0.2);
+  background-blend-mode: darken;
+  color: white;
+}
+.imagenfondo2{
+  background-image: url(..//imagenes/portada2.jpg);
+  background-size: cover;
+  height: 250px;
+  background-position: center;
+  background-color: rgba(255, 0, 0, 0.2);
+  background-blend-mode: darken;
+  color: white;
+}
+.imagenfondo3{
+  background-image: url(..//imagenes/portada3.jpg);
+  background-size: cover;
+  height: 250px;
+  background-position: center;
+  background-color: rgba(255, 0, 0, 0.2);
+  background-blend-mode: darken;
+  color: white;
+}
+.imagenfondo4{
+  background-image: url(..//imagenes/portada42.jpg);
+  background-size: cover;
+  height: 250px;
+  background-position: center;
+  background-color: rgba(255, 0, 0, 0.2);
+  background-blend-mode: darken;
+  color: white;
+}
+.imagenfondo5{
+  background-image: url(..//imagenes/portada6.jpg);
+  background-size: cover;
+  height: 250px;
+  background-position: center;
+  background-color: rgba(255, 0, 0, 0.2);
+  background-blend-mode: darken;
+  color: white;
+}
+.tamañoimagenes{
+  height: 200px;
+}
+.style-letra{
+  font-family: 'Noto Sans', sans-serif;
+}
+.title {
+  font-size: 2.5em;
+  margin-top: 0;
+}
+.titleredes {
+  font-size: 1.8em;
+  margin-top: 0;
+}
+
+.main-nav{
+  background: #F44336; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #F44336,#D40833 );
+  background: -moz-linear-gradient(right, #F44336, #D40833);
+  background: -o-linear-gradient(right, #F44336, #D40833);
+  background: linear-gradient(to left, #F44336, #D40833);
+}
+.main-header{
+  background-color:#F44336;
+  padding-left:15px;
+  padding-right:15px;
+  padding-top:15px;
+  padding-bottom:15px;
+  border-radius: 4px;
+}
+.marginredes{
+  padding-top: 50px;
+}
+.textsizeparrafos{
+  font-size: 1.4em;
+  margin-left: auto;
+}
+.nav-link{
+  color:white;
+  margin-right: -4px;
+  font-size: 12px;
+  text-decoration: none;
+  width: 100%;
+  display: inline-block;
+}
+.text-center{
+  text-align:center;
+}
+.color-text{
+  color:#212121
+}
+.color-links{
+  color:#F53838;
+}
+.main-container{
+  min-height: 60vh;
+}
+.tiraproductos{
+  overflow-x:scroll;
+}
+.tiracontenedor{
+  display: flex;
+}
+.tiracontenedor .card{
+  width: 300px;
+  height: 400px;
+  flex-shrink: 0;
+  margin-right: 1000rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.clients img{
+  width: 250px;
+  height: 330px;
+  margin-left: 1rem;
+  margin-right: 0;
+}
+.clients h3{
+  font-size: 1.7em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.card{
+  border-radius: 1px;
+  background-color: white;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12),0 1px 1px rgb(255, 0, 0);
+}
+.threeD{
+  text-shadow: 1px 3px 0px #6b251d, 1px 13px 5px rgb(171,168,168);
+}
+
+.tamañoDeMaps{
+  position: relative;
+  padding-top: 56.25%;
+}
+.tamañoDeMaps iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.delay-1{
+  animation-delay: 0.1s;
+  position: relative;
+  z-index: 8;
+}
+.delay-2{
+  animation-delay: 0.2s;
+  position: relative;
+  z-index: 7;
+}
+.delay-3{
+  animation-delay: 0.3s;
+  position: relative;
+  z-index: 6;
+}
+.delay-4{
+  animation-delay: 0.4s;
+  position: relative;
+  z-index: 5;
+}
+.delay-5{
+  animation-delay: 0.5s;
+  position: relative;
+  z-index: 4;
+}
+.delay-6{
+  animation-delay: 0.6s;
+  position: relative;
+  z-index: 3;
+}
+.delay-7{
+  animation-delay: 0.7s;
+  position: relative;
+  z-index: 2;
+}
+.delay-8{
+  animation-delay: 0.8s;
+  position: relative;
+  z-index: 1;
+}

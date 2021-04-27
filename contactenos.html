@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cars Parking Service</title>
+
+    <link rel="icon" type="image/png" href="./imagenes/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/login-form.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="row main-container middle-xs center-xs">
+      <div class="col-md-10 col-sm-10 col-sm-11 col-sm-7">
+        <div class="box">
+          <div class="card animate__animated animate__zoomIn">
+            <header class="">
+              <nav class="navbar navbar-inverse main-nav navbar-expand-lg">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a
+                      class="navbar-brand"
+                      style="color: aliceblue;"
+                      href="index.html  "
+                    >
+                      <img
+                        src="./imagenes/valetparking.jpg"
+                        width="30"
+                        height="30"
+                        class="d-inline-block align-top"
+                        alt=""
+                        loading="lazy"
+                      />
+                      Quiénes somos
+                    </a>
+                  </div>
+
+                  <ul class="nav navbar-nav">
+                    <li class="active">
+                      <a
+                        class="mr-4 ml-4"
+                        href="servicios.html"
+                        style="color: aliceblue;"
+                        >Servicios</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="mr-4 ml-4"
+                        href="clientes.html"
+                        style="color: aliceblue;"
+                        >Nuestros clientes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="mr-4 ml-4"
+                        href="contactenos.html"
+                        style="color: aliceblue;"
+                        >Contáctenos</a
+                      >
+                    </li>
+                  </ul>
+
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="logged-out" style="display: none;">
+                      <a
+                        class="mr-2 ml-2"
+                        href="#"
+                        style="color: aliceblue;"
+                        data-toggle="modal"
+                        data-target="#loginmodal"
+                        ><span class="glyphicon glyphicon-user"></span>Iniciar
+                        sesión</a
+                      >
+                    </li>
+
+                    <li class="logged-out" style="display: none;">
+                      <a
+                        class="mr-2 ml-2"
+                        href="#"
+                        style="color: aliceblue;"
+                        data-toggle="modal"
+                        data-target="#registromodal"
+                      >
+                        <span class="glyphicon glyphicon-log-in"></span
+                        >Registrarse</a
+                      >
+                    </li>
+
+                    <li class="logged-in" style="display: none;">
+                      <a
+                        class="emaillogin mr-2 ml-2"
+                        href="#"
+                        style="color: aliceblue;"
+                        id="emaillogin"
+                      ></a>
+                    </li>
+
+                    <li class="logged-in" style="display: none;">
+                      <a
+                        class="mr-2 ml-2"
+                        href="#"
+                        style="color: aliceblue;"
+                        id="logout"
+                        >Cerrar sesión</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </header>
+
+            <article class="">
+              <div
+                class="imagenfondo2 d-flex justify-content-end align-items-start p-4 flex-column"
+              >
+                <header class="text-center ">
+                  <h1 class="style-letra title">Nuestras Redes</h1>
+                </header>
+              </div>
+
+              <div class="mt-3">
+                <div class="card mx-auto" style="width: 18rem;">
+                  <div class="alert alert-danger" role="alert">
+                    <div
+                      class="badge badge-danger text-wrap"
+                      style="width: 16rem;"
+                    >
+                      Nuestra Aplicación Móvil
+                    </div>
+                  </div>
+                  <a
+                    href="https://drive.google.com/drive/folders/1WNSXrGfIm0M5PwZuqK2u8G4J-DIdyXA5?usp=sharing"
+                    target="_blank"
+                  >
+                    <img
+                      src="./imagenes/android.jpg"
+                      class="card-img-top tamañoimagenes"
+                      alt="Logo de Aplicaciónmovil"
+                    />
+                  </a>
+
+                  <div class="card-body">
+                    <h5 class="card-title">App Móvil</h5>
+                    <p class="card-text text-justify">
+                      Descarga nuestra Aplicacion móvil para sistemas operativos
+                      android... Proximamente la tendremos en la plataforma de
+                      Play Store
+                    </p>
+                    <a
+                      href="https://drive.google.com/drive/folders/1WNSXrGfIm0M5PwZuqK2u8G4J-DIdyXA5?usp=sharing"
+                      class="btn btn-danger"
+                      target="_blank"
+                      >Descargar APK</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <div class="card mx-auto" style="width: 18rem;">
+                  <div class="alert alert-danger" role="alert">
+                    <div
+                      class="badge badge-danger text-wrap"
+                      style="width: 16rem;"
+                    >
+                      Nuestro Facebook
+                    </div>
+                  </div>
+
+                  <a
+                    href="https://www.facebook.com/adrianferley.quiramahoyos"
+                    target="_blank"
+                  >
+                    <img
+                      src="./imagenes/facebook.jpg"
+                      class="card-img-top tamañoimagenes"
+                      alt="Logo de facebook"
+                    />
+                  </a>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Facebook</h5>
+                    <p class="card-text ">
+                      Ingresa a nuestro facebook para mas informacion.
+                    </p>
+                    <a
+                      href="https://www.facebook.com/adrianferley.quiramahoyos"
+                      class="btn btn-danger"
+                      target="_blank"
+                      >Clic aquí para ir a nuestro facebook</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <div class="card mx-auto" style="width: 18rem;">
+                  <div class="alert alert-danger" role="alert">
+                    <div
+                      class="badge badge-danger text-wrap"
+                      style="width: 16rem;"
+                    >
+                      Nuestro Instagram
+                    </div>
+                  </div>
+
+                  <a
+                    href="https://www.instagram.com/cars_parking_service/?hl=es-la"
+                    target="_blank"
+                  >
+                    <img
+                      src="./imagenes/instagram.jpg"
+                      class="card-img-top tamañoimagenes"
+                      alt="Logo de Instagram"
+                    />
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title">Instagram</h5>
+                    <p class="card-text">
+                      Ingresa a nuestro instagram para mas informacion.
+                    </p>
+                    <a
+                      href="https://www.instagram.com/cars_parking_service/?hl=es-la"
+                      class="btn btn-danger"
+                      target="_blank"
+                      >Clic aquí para ir a nuestro instagram</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <div class="card mx-auto" style="width: 18rem;">
+                  <div class="alert alert-danger" role="alert">
+                    <div
+                      class="badge badge-danger text-wrap"
+                      style="width: 16rem;"
+                    >
+                      Nuestro Correo electronico
+                    </div>
+                  </div>
+
+                  <a href="mailto:adriankirama@gmail.com" target="_blank">
+                    <img
+                      src="./imagenes/mail.jpg"
+                      class="card-img-top tamañoimagenes"
+                      alt="Logo de gmail"
+                    />
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title">Correo electronico</h5>
+                    <p class="card-text">
+                      Si deseas contactar con nosotros, puedes enviarnos un
+                      correo electronico y te responderemos en el menor tiempo
+                      posible.
+                    </p>
+                    <a
+                      href="mailto:adriankirama@gmail.com"
+                      class="btn btn-danger"
+                      target="_blank"
+                      >Clic aquí para enviarnos un correo</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <section>
+                <div class="mb-5">
+                  <h5 class="marginredes">
+                    Sede principal: Poblado, Cra 33 #7-41 Provenza
+                  </h5>
+                  <div class="tamañoDeMaps">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4349454417634!2d-75.56497100467816!3d6.206217660408363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e468282976d34ff%3A0xe71d9b8c95e50c72!2sEl%20Bot%C3%A1nico!5e0!3m2!1ses-419!2sco!4v1596416217569!5m2!1ses-419!2sco"
+                      width="600"
+                      height="450"
+                      frameborder="0"
+                      style="border:0;"
+                      allowfullscreen=""
+                      aria-hidden="false"
+                      tabindex="0"
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <div class="alert alert-warning" role="alert">
+                    <h4 class="alert-heading text-center">
+                      Donaciones para el desarrollador
+                    </h4>
+                  </div>
+
+                  <form
+                    action="https://www.paypal.com/cgi-bin/webscr"
+                    method="post"
+                    target="_top"
+                  >
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input
+                      type="hidden"
+                      name="hosted_button_id"
+                      value="SFDC8SDTYDBSW"
+                    />
+                    <input
+                      type="image"
+                      src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+                      name="submit"
+                      title="PayPal - The safer, easier way to pay online!"
+                      alt="Donate with PayPal button"
+                    />
+                    <img
+                      alt=""
+                      src="https://www.paypal.com/en_CO/i/scr/pixel.gif"
+                      width="1"
+                      height="1"
+                    />
+                  </form>
+
+                  <div class="mt-3">
+                    <form
+                      action="https://www.paypal.com/cgi-bin/webscr"
+                      method="post"
+                      target="_top"
+                    >
+                      <input type="hidden" name="cmd" value="_s-xclick" />
+                      <input
+                        type="hidden"
+                        name="hosted_button_id"
+                        value="KN8X7YPT33Y2L"
+                      />
+                      <input
+                        type="image"
+                        src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif"
+                        name="submit"
+                        alt="PayPal - The safer, easier way to pay online!"
+                      />
+                      <img
+                        alt=""
+                        src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif"
+                        width="1"
+                        height="1"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </section>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal login -->
+      <div
+        class="modal fade"
+        id="loginmodal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal-sm">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabellogin">
+                Inicia sesión
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="">
+              <div class="">
+                <div class="form">
+                  <img
+                    src="imagenes/valetparking.jpg"
+                    class="mt-0"
+                    height="80px"
+                    alt=""
+                  />
+                  <h1>Bienvenidos</h1>
+
+                  <form
+                    id="iniciarsesion-form"
+                    class="login-form"
+                    method="post"
+                  >
+                    <input
+                      id="login-email"
+                      type="email"
+                      placeholder="Correo electronico "
+                      required
+                    />
+                    <input
+                      id="login-password"
+                      type="password"
+                      placeholder="Contraseña"
+                      required
+                    />
+
+                    <button class="formbutton" type="submit">
+                      Iniciar sesión
+                    </button>
+
+                    <button
+                      type="button"
+                      style="background-color: #db4437;"
+                      class="btn btn-info btn-block mt-2"
+                      id="googleLogin"
+                    >
+                      <i
+                        class="fa fa-google"
+                        style="margin-left:0px;padding-right:10px;padding-left:10px;width:30px;"
+                      ></i>
+                      Iniciar sesión con Google
+                    </button>
+
+                    <button
+                      type="button"
+                      style="background-color: #1a538a;"
+                      class="btn btn-primary btn-block mt-2"
+                      id="FacebookLogin"
+                    >
+                      <i
+                        class="fa fa-facebook"
+                        style="margin-left:0px;padding-right:10px;padding-left:10px;width:30px;"
+                      ></i>
+                      Iniciar sesión con Facebook
+                    </button>
+                    <p style="color: black;" class="message">
+                      No tienes una cuenta?
+                      <button
+                        style="background-color: #BDBDBD;"
+                        class="btn"
+                        type="button"
+                        data-toggle="modal"
+                        data-dismiss="modal"
+                        data-target="#registromodal"
+                      >
+                        Registrarse
+                      </button>
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal registro -->
+      <div
+        class="modal fade"
+        id="registromodal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content  modal-sm">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabelregistro">
+                Registrarse
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="">
+              <div class="">
+                <div class="form">
+                  <img src="imagenes/valetparking.jpg" height="80px" alt="" />
+                  <h1>Bienvenidos</h1>
+
+                  <form id="registrarse-form" method="post">
+                    <input
+                      id="signup-email"
+                      type="email"
+                      placeholder="Correo electronico "
+                      required
+                    />
+                    <input
+                      id="signup-password"
+                      type="password"
+                      placeholder="Contraseña"
+                      required
+                    />
+
+                    <button class="formbutton" type="submit">
+                      Registrarse
+                    </button>
+
+                    <button
+                      type="button"
+                      style="background-color: #db4437;"
+                      class="btn btn-info btn-block mt-2"
+                      id="googleregistro"
+                    >
+                      <i
+                        class="fa fa-google"
+                        style="margin-left:0px;padding-right:10px;padding-left:10px;width:30px;"
+                      ></i>
+                      Registrarse con Google
+                    </button>
+
+                    <button
+                      type="button"
+                      style="background-color: #1a538a;"
+                      class="btn btn-primary btn-block mt-2"
+                      id="Facebookregistro"
+                    >
+                      <i
+                        class="fa fa-facebook"
+                        style="margin-left:0px;padding-right:10px;padding-left:10px;width:30px;"
+                      ></i>
+                      Registrarse con Facebook
+                    </button>
+
+                    <p style="color: black;" class="message">
+                      Ya tienes una cuenta?
+                      <button
+                        style="background-color: #BDBDBD;"
+                        class="btn"
+                        type="button"
+                        data-toggle="modal"
+                        data-dismiss="modal"
+                        data-target="#loginmodal"
+                      >
+                        Inicia Sesión
+                      </button>
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--boostrap scripts-->
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"
+      ></script>
+
+      <!--firebas scripts-->
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+
+      <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyBmlHwJdr_w7R1YtojVjzB5_IEnjNgw9c8",
+          authDomain: "database-72a13.firebaseapp.com",
+          databaseURL: "https://database-72a13.firebaseio.com",
+          projectId: "database-72a13",
+          storageBucket: "database-72a13.appspot.com",
+          messagingSenderId: "362350283552",
+          appId: "1:362350283552:web:cff37d3829ab0927e9e545",
+          measurementId: "G-C8ZMP6PNDX"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const fs = firebase.firestore();
+        firebase.analytics();
+      </script>
+
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>
